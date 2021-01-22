@@ -1,0 +1,323 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sensor_Pressure:BMP280 U4
+U 1 1 5FF1632F
+P 3050 2750
+F 0 "U4" H 3280 2846 50  0000 L CNN
+F 1 "BMP280" H 3280 2755 50  0000 L CNN
+F 2 "Package_LGA:Bosch_LGA-8_2x2.5mm_P0.65mm_ClockwisePinNumbering" H 3050 2050 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001.pdf" H 3050 2750 50  0001 C CNN
+	1    3050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR042
+U 1 1 5FF2A089
+P 3050 2350
+F 0 "#PWR042" H 3050 2200 50  0001 C CNN
+F 1 "+3.3V" H 3065 2523 50  0000 C CNN
+F 2 "" H 3050 2350 50  0001 C CNN
+F 3 "" H 3050 2350 50  0001 C CNN
+	1    3050 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2350 3050 2350
+Connection ~ 3050 2350
+$Comp
+L power:GND #PWR043
+U 1 1 5FF2C597
+P 3050 3050
+F 0 "#PWR043" H 3050 2800 50  0001 C CNN
+F 1 "GND" H 3055 2877 50  0000 C CNN
+F 2 "" H 3050 3050 50  0001 C CNN
+F 3 "" H 3050 3050 50  0001 C CNN
+	1    3050 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3050 3050 3050
+Connection ~ 3050 3050
+$Comp
+L power:GND #PWR044
+U 1 1 5FF2CF4D
+P 3150 6200
+F 0 "#PWR044" H 3150 5950 50  0001 C CNN
+F 1 "GND" H 3155 6027 50  0000 C CNN
+F 2 "" H 3150 6200 50  0001 C CNN
+F 3 "" H 3150 6200 50  0001 C CNN
+	1    3150 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR041
+U 1 1 5FF2E6A4
+P 2600 5900
+F 0 "#PWR041" H 2600 5650 50  0001 C CNN
+F 1 "GND" H 2605 5727 50  0000 C CNN
+F 2 "" H 2600 5900 50  0001 C CNN
+F 3 "" H 2600 5900 50  0001 C CNN
+	1    2600 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 5700 2600 5700
+$Comp
+L power:+3.3V #PWR045
+U 1 1 5FF2F78A
+P 3150 4500
+F 0 "#PWR045" H 3150 4350 50  0001 C CNN
+F 1 "+3.3V" H 3165 4673 50  0000 C CNN
+F 2 "" H 3150 4500 50  0001 C CNN
+F 3 "" H 3150 4500 50  0001 C CNN
+	1    3150 4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 2650 4700 0    50   Input ~ 0
+SPI1_SCK
+Text GLabel 2650 4850 0    50   Input ~ 0
+SPI1_MOSI
+Text GLabel 2650 5300 0    50   Input ~ 0
+SPI1_!CS_ACC
+Text GLabel 2650 5450 0    50   Input ~ 0
+SPI1_!CS_GYR
+$Comp
+L power:+3.3V #PWR050
+U 1 1 5FF31A24
+P 4400 5450
+F 0 "#PWR050" H 4400 5300 50  0001 C CNN
+F 1 "+3.3V" H 4415 5623 50  0000 C CNN
+F 2 "" H 4400 5450 50  0001 C CNN
+F 3 "" H 4400 5450 50  0001 C CNN
+	1    4400 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR051
+U 1 1 5FF31E0B
+P 4400 5800
+F 0 "#PWR051" H 4400 5550 50  0001 C CNN
+F 1 "GND" H 4405 5627 50  0000 C CNN
+F 2 "" H 4400 5800 50  0001 C CNN
+F 3 "" H 4400 5800 50  0001 C CNN
+	1    4400 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR053
+U 1 1 5FF32599
+P 4750 5800
+F 0 "#PWR053" H 4750 5550 50  0001 C CNN
+F 1 "GND" H 4755 5627 50  0000 C CNN
+F 2 "" H 4750 5800 50  0001 C CNN
+F 3 "" H 4750 5800 50  0001 C CNN
+	1    4750 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR052
+U 1 1 5FF326A2
+P 4750 5450
+F 0 "#PWR052" H 4750 5300 50  0001 C CNN
+F 1 "+3.3V" H 4765 5623 50  0000 C CNN
+F 2 "" H 4750 5450 50  0001 C CNN
+F 3 "" H 4750 5450 50  0001 C CNN
+	1    4750 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C21
+U 1 1 5FF32C3D
+P 4400 5600
+F 0 "C21" H 4492 5646 50  0000 L CNN
+F 1 "100n" H 4492 5555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4400 5600 50  0001 C CNN
+F 3 "~" H 4400 5600 50  0001 C CNN
+	1    4400 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C22
+U 1 1 5FF33E9B
+P 4750 5600
+F 0 "C22" H 4842 5646 50  0000 L CNN
+F 1 "100n" H 4842 5555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4750 5600 50  0001 C CNN
+F 3 "~" H 4750 5600 50  0001 C CNN
+	1    4750 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 5450 4400 5500
+Wire Wire Line
+	4400 5700 4400 5800
+Wire Wire Line
+	4750 5450 4750 5500
+Wire Wire Line
+	4750 5700 4750 5800
+$Comp
+L power:+3.3V #PWR046
+U 1 1 5FF37205
+P 3850 2350
+F 0 "#PWR046" H 3850 2200 50  0001 C CNN
+F 1 "+3.3V" H 3865 2523 50  0000 C CNN
+F 2 "" H 3850 2350 50  0001 C CNN
+F 3 "" H 3850 2350 50  0001 C CNN
+	1    3850 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR047
+U 1 1 5FF3720B
+P 3850 2700
+F 0 "#PWR047" H 3850 2450 50  0001 C CNN
+F 1 "GND" H 3855 2527 50  0000 C CNN
+F 2 "" H 3850 2700 50  0001 C CNN
+F 3 "" H 3850 2700 50  0001 C CNN
+	1    3850 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR049
+U 1 1 5FF37211
+P 4250 2700
+F 0 "#PWR049" H 4250 2450 50  0001 C CNN
+F 1 "GND" H 4255 2527 50  0000 C CNN
+F 2 "" H 4250 2700 50  0001 C CNN
+F 3 "" H 4250 2700 50  0001 C CNN
+	1    4250 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR048
+U 1 1 5FF37217
+P 4250 2350
+F 0 "#PWR048" H 4250 2200 50  0001 C CNN
+F 1 "+3.3V" H 4265 2523 50  0000 C CNN
+F 2 "" H 4250 2350 50  0001 C CNN
+F 3 "" H 4250 2350 50  0001 C CNN
+	1    4250 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C19
+U 1 1 5FF3721D
+P 3850 2500
+F 0 "C19" H 3942 2546 50  0000 L CNN
+F 1 "100n" H 3942 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3850 2500 50  0001 C CNN
+F 3 "~" H 3850 2500 50  0001 C CNN
+	1    3850 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C20
+U 1 1 5FF37223
+P 4250 2500
+F 0 "C20" H 4342 2546 50  0000 L CNN
+F 1 "100n" H 4342 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4250 2500 50  0001 C CNN
+F 3 "~" H 4250 2500 50  0001 C CNN
+	1    4250 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2350 3850 2400
+Wire Wire Line
+	3850 2600 3850 2700
+Wire Wire Line
+	4250 2350 4250 2400
+Wire Wire Line
+	4250 2600 4250 2700
+Text GLabel 2650 2550 0    50   Input ~ 0
+SPI3_SCK
+Text GLabel 2650 2650 0    50   Input ~ 0
+SPI3_MOSI
+Text GLabel 2650 2750 0    50   Input ~ 0
+SPI3_MISO
+Text GLabel 2650 2850 0    50   Input ~ 0
+SPI3_!CS
+Wire Notes Line
+	1950 2000 1950 3350
+Wire Notes Line
+	1950 3350 4600 3350
+Wire Notes Line
+	4600 3350 4600 2000
+Wire Notes Line
+	4600 2000 1950 2000
+Wire Notes Line
+	1950 4250 5300 4250
+Text Notes 1900 1950 0    118  ~ 24
+Barometric Pressure Sensor\n
+Text Notes 1900 4400 0    118  ~ 24
+Inertial Measurement Unit\n\n
+Text Notes 800  1200 0    394  ~ 79
+Sensors\n
+$Comp
+L BMI088:BMI088 U5
+U 1 1 5FF41D2B
+P 3250 5450
+F 0 "U5" H 3600 6350 50  0000 C CNN
+F 1 "BMI088" H 3650 4900 50  0000 C CNN
+F 2 "BMI088:BMI088" H 3250 5450 50  0001 C CNN
+F 3 "" H 3250 5450 50  0001 C CNN
+	1    3250 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4500 3150 4500
+Connection ~ 3150 4500
+Text GLabel 2550 5000 0    50   Input ~ 0
+SPI1_MISO
+Wire Wire Line
+	2650 5000 2600 5000
+Wire Wire Line
+	2650 5150 2600 5150
+Wire Wire Line
+	2600 5150 2600 5000
+Connection ~ 2600 5000
+Wire Wire Line
+	2600 5000 2550 5000
+Text GLabel 3850 5000 2    50   Input ~ 0
+INT_GYR
+Text GLabel 3850 4700 2    50   Input ~ 0
+INT_ACC
+NoConn ~ 3850 5150
+NoConn ~ 3850 4850
+Wire Wire Line
+	2600 5700 2600 5850
+Wire Wire Line
+	2650 5850 2600 5850
+Connection ~ 2600 5850
+Wire Wire Line
+	2600 5850 2600 5900
+Wire Wire Line
+	3150 6200 3150 6100
+Wire Wire Line
+	3350 6050 3350 6100
+Wire Wire Line
+	3350 6100 3150 6100
+Connection ~ 3150 6100
+Wire Wire Line
+	3150 6100 3150 6050
+Wire Notes Line
+	1950 6500 5300 6500
+Wire Notes Line
+	5300 4250 5300 6500
+Wire Notes Line
+	1950 4250 1950 6500
+$EndSCHEMATC
